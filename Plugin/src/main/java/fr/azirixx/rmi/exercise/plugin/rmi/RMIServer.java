@@ -10,13 +10,13 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
-public class RMIManager {
+public class RMIServer {
 
     int port;
 
     ServerImpl server;
 
-    public RMIManager(int port) {
+    public RMIServer(int port) {
         this.port = port;
     }
 

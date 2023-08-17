@@ -16,7 +16,7 @@ public class RMIExercise {
         for (int i = 0; i < args.length-1; i++) {
             String key = args[i].toLowerCase();
             String value = args[i+1];
-            if(key.equals("--port") || key.equals("-p")) {
+            if(key.equals("-port") || key.equals("-p")) {
                 port = Integer.parseInt(value);
             }
         }

@@ -1,7 +1,7 @@
 package fr.azirixx.rmi.exercise.plugin;
 
 import com.google.common.base.Charsets;
-import fr.azirixx.rmi.exercise.plugin.rmi.RMIManager;
+import fr.azirixx.rmi.exercise.plugin.rmi.RMIServer;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -17,7 +17,7 @@ public class RMIExercise extends JavaPlugin {
         return instance;
     }
 
-    RMIManager rmiServer;
+    RMIServer rmiServer;
     @Override
     public void onEnable() {
         instance = this;
@@ -28,7 +28,7 @@ public class RMIExercise extends JavaPlugin {
         if(getConfig().isSet("port") && (getConfig().isInt("port") || !getConfig().getString("port").equals("default"))) {
             port = getConfig().getInt("port");
         }
-        rmiServer = new RMIManager(port);
+        rmiServer = new RMIServer(port);
         rmiServer.start();
     }
 
@@ -36,7 +36,7 @@ public class RMIExercise extends JavaPlugin {
     public void onDisable() {
     }
 
-    public RMIManager getRmiServer() {
+    public RMIServer getRmiServer() {
         return rmiServer;
     }
 
