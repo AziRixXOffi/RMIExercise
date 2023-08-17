@@ -16,10 +16,10 @@ With flags:
 Once the program is launched, you can execute commands in it. More details with /help
 | Command  | Description |
 | --- | --- |
-| `/help` | Get help |
-| `/stop` | Stop the client |
-| `/list` | List online players |
-| `/message <player> <message>` | Send a message to a player |
-| `/block <world> <x> <y> <z> [material]` | Get or set a block if material arg is set |
-| `/teleport <player> <world> <x> <y> <z>` | Teleport a player |
-| `/playparticle <player> <particle> <world> <x> <y> <z>` | Play a particle |
+| `help` | Get help |
+| `stop` | Stop the client |
+| `list` | List online players |
+| `message <player> <message>` | Send a message to a player |
+| `block <world> <x> <y> <z> [material]` | Get or set a block if material arg is set |
+| `teleport <player> <world> <x> <y> <z>` | Teleport a player |
+| `playparticle <player> <particle> <world> <x> <y> <z>` | Play a particle |
